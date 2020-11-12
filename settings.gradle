@@ -1,0 +1,3 @@
+include ':statusLayout'
+include ':app'
+rootProject.name = "StatusLayout"
