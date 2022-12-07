@@ -1,37 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <declare-styleable name="StatusLayout">
-        <attr name="status" format="enum|integer">
+        <attr name="status">
+            <enum name="NORMAL" value="0" />
+            <enum name="ERROR" value="1" />
+            <enum name="EMPTY" value="2" />
+            <enum name="LOADING" value="3" />
             <enum name="NONE" value="-1" />
-            <enum name="NORMAL" value="-2" />
-            <enum name="ERROR" value="-3" />
-            <enum name="EMPTY" value="-4" />
-            <enum name="LOADING" value="-5" />
-        </attr>
-
-        <attr name="toolsStatus" format="enum|integer">
-            <enum name="NONE" value="-1" />
-            <enum name="NORMAL" value="-2" />
-            <enum name="ERROR" value="-3" />
-            <enum name="EMPTY" value="-4" />
-            <enum name="LOADING" value="-5" />
         </attr>
 
         <attr name="showAnimRes" format="reference" />
         <attr name="hideAnimRes" format="reference" />
+        <attr name="animDuration" format="integer" />
+        <attr name="statusViewConstructorClassname" format="string"/>
+        <attr name="statusViewConstructorInflaterXml" format="reference"/>
     </declare-styleable>
-
-
 
     <declare-styleable name="StatusLayout_Layout">
-        <attr name="layout_status" format="enum|integer">
+        <attr name="layout_status">
             <enum name="NONE" value="-1" />
-            <enum name="NORMAL" value="-2" />
-            <enum name="ERROR" value="-3" />
-            <enum name="EMPTY" value="-4" />
-            <enum name="LOADING" value="-5" />
+            <enum name="NORMAL" value="0" />
+            <enum name="ERROR" value="1" />
+            <enum name="EMPTY" value="2" />
+            <enum name="LOADING" value="3" />
         </attr>
     </declare-styleable>
-
 </resources>
